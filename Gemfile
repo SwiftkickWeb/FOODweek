@@ -51,6 +51,6 @@ group :development do
   gem 'spring', '~> 2.0.0' # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring-watcher-listen', '~> 2.0.0'
 
-  gem 'better_errors', '~> 2.1.1' # better error pages for rack apps
+  gem 'better_errors', '~> 2.9.1' # better error pages for rack apps
   gem 'binding_of_caller', '~> 0.7.2' # needed for advanced better_errors features
 end
