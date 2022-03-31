@@ -3,7 +3,7 @@ ruby '2.4.0'
 
 gem 'rails', '~> 5.0.2'
 gem 'pg', '~> 0.19.0' # User Postgresql as the database for Active Record
-gem 'puma', '~> 3.7.1' # Use Puma as the app server
+gem 'puma', '~> 4.3.12' # Use Puma as the app server
 
 gem 'bootstrap-sass', '~> 3.3.6' # Use twitter bootstrap (with sass)
 gem 'sass-rails', '~> 5.0' # Use SCSS for stylesheets
