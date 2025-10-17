@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
-ruby '2.4.0'
+ruby '2.7.3'
 
 gem 'rails', '~> 5.0.2'
-gem 'pg', '~> 0.19.0' # User Postgresql as the database for Active Record
+gem 'pg', '~> 1.5' # User Postgresql as the database for Active Record
 gem 'puma', '~> 3.7.1' # Use Puma as the app server
 
 gem 'bootstrap-sass', '~> 3.3.6' # Use twitter bootstrap (with sass)
@@ -26,9 +26,15 @@ gem 'ruby-units' # allows summation and subtraction of differing units, e.g., po
 gem 'rollbar'
 
 group :development, :test do
-  gem 'byebug', '~> 9.0.6', platform: :mri # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'rspec-rails', '~> 3.5.2' # Use rspec for testing
   gem 'rails-controller-testing'
+
+  # added to stop nokogiri from crashing out when installing
+  gem 'nokogiri', '~> 1.15', '>= 1.15.6'
+  gem 'rails-html-sanitizer', '>= 1.6.0'
+  gem 'loofah', '>= 2.24.0'
+
+  #continuing on...
   gem 'capybara', '~> 2.10.1' # Use capybara for plain language testing
   gem 'factory_girl_rails', '~> 4.7.0' # Use factory_girl_rails to generate data for tests
   gem 'database_cleaner', '~> 1.5.3' # Use database_cleaner for maintaining a clean test database on each run
